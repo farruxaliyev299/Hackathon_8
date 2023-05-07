@@ -13,3 +13,5 @@ C:\Users\support\Desktop\Hackathon\Hackathon\Hackathon.Application\obj\Debug\net
 C:\Users\support\Desktop\Hackathon\Hackathon\Hackathon.Application\obj\Debug\net7.0\refint\Hackathon.Application.dll
 C:\Users\support\Desktop\Hackathon\Hackathon\Hackathon.Application\obj\Debug\net7.0\Hackathon.Application.pdb
 C:\Users\support\Desktop\Hackathon\Hackathon\Hackathon.Application\obj\Debug\net7.0\ref\Hackathon.Application.dll
+C:\Users\support\Desktop\Hackathon\Hackathon\Hackathon.Application\bin\Debug\net7.0\Hackathon.Infrastructure.dll
+C:\Users\support\Desktop\Hackathon\Hackathon\Hackathon.Application\bin\Debug\net7.0\Hackathon.Infrastructure.pdb
