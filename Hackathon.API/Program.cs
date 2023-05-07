@@ -5,6 +5,7 @@ using Hackathon.Infrastructure.Persistence.Identity.Models;
 using Hackathon.Infrastructure.Persistence.Initialize;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -17,6 +18,17 @@ builder.Services.AddScoped<IDbInitialize, DbInitialize>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("fixed", config =>
+    {
+        config.PermitLimit = 4;
+        config.Window = TimeSpan.FromSeconds(12);
+        config.QueueProcessingOrder = System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
+        config.QueueLimit = 3;
+    });
+});
 
 builder.Services.AddMediatR(config =>
 {
