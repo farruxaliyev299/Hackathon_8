@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Hackathon.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Hackathon.Application": "1.0.0"
+        },
+        "runtime": {
+          "Hackathon.Infrastructure.dll": {}
+        }
+      },
+      "Hackathon.Application/1.0.0": {
+        "dependencies": {
+          "Hackathon.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Hackathon.Application.dll": {}
+        }
+      },
+      "Hackathon.Domain/1.0.0": {
+        "runtime": {
+          "Hackathon.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hackathon.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hackathon.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hackathon.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
